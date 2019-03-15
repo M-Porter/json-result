@@ -22,8 +22,8 @@
         }
     },
     "scripts": {
-        "check-style": "phpcs -p --standard=PSR2 src/",
-        "fix-style": "phpcbf -p --standard=PSR2 src/"
+        "lint": "phpcs -pns --standard=PSR2 src/ config/",
+        "lint-fix": "phpcbf -pns --standard=PSR2 src/ config/"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
