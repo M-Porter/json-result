@@ -1,0 +1,30 @@
+{
+    "name": "m-porter/json-result",
+    "description": "Enforce consistent JSON responses in your Laravel APIs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Porter",
+            "email": "mtp5129@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/http": "^5.5,<5.9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MPorter\\JsonResult\\": "src"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
